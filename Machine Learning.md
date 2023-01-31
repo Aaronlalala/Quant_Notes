@@ -10,6 +10,12 @@
 
 ### Logistic Regression
 
+$\hat{y} = sigmoid(w^Tx + b)$. The sigmoid function is to make the estimated value's range is 0 to 1 to represent the probability. The learning process is to find out optimal parameter $w$.
+
+Sigmoid function $S(x) = \frac{1}{1 + e^{-x}}$. 
+
+
+
 ### Polynomial Regression
 
 Regularization?
