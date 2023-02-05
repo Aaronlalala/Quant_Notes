@@ -1,0 +1,3 @@
+# Zero-shot Learning
+
+The goal is to predict classes that are not seen by the model during training. It's called zero-shot learning. One strategy is to extract the common features of classes both in training and testing set. For example, in training set there are animals chickens and cat. In testing set, there are animals monkey and dog. By differentiating number of legs, model trained without data of monkey and dog could classify two animals in testing data.
