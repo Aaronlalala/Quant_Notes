@@ -22,7 +22,7 @@ $\hat{y} = sigmoid(w^Tx + b)$. The sigmoid function is to make the estimated val
 
 **Cost function (average loss for entire training set):** $J(w, b) = \dfrac{1}{m}\sum L(\hat{y}^{(i)}- y^{(i)})^2$
 
-
+**class_weight:** A very interesting parameter of the model. It describes the cost for making a false prediction for the label. Sometimes making a false prediction for a positive target is much larger than a false prediction for a negative target.
 
 
 

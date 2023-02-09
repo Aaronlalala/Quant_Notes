@@ -12,6 +12,10 @@ Taylor Series general form: $f(x) = \sum_{n=0}^{\infin}\dfrac{f^{(n)}(a)}{n!}(x-
 
 When $a=0$ it could be simplified as $f(x) = \sum_{n=0}^{\infin}\dfrac{f^{(n)}(0)}{n!}x^n$. 
 
+
+
+
+
 # Linear Algebra
 
 ## Linearly Independent
@@ -57,11 +61,13 @@ $\|A\|$ is the matrix norm, which maps a matrix to a scalar and satisfies certai
 
 ## Complexity to Solve a Linear System
 
+**Singular values:** square root of eigen values.
+
 orthogonal:
 
 Triangular:
 
 ### LU Decomposition
 
-Partial Pivoting
+
 
