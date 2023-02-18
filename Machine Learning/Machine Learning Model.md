@@ -59,13 +59,3 @@ Can maximum depth of a decision tree be greater than the number of the features?
 KNN is an instance based model, it's also called lazy learning model. Because it does not learning a disriminative function from the training data but recording the traning data.
 
 
-
-
-
-# Feature Engineering
-
-## Feature Scaling
-
-Feature scaling is a method used to normalize the range of independent variables or features. It's also known as data normalization.
-
-We need to perform features scaling when we are dealing with Gradient Descent Based algorithms and distance-based algorithms. However, tree model does not require.
