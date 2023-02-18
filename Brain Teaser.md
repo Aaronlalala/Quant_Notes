@@ -1,3 +1,3 @@
 # Brain Teasers
 
-一种题型是一个复杂的问题可以被分解成简单的小问题，复杂状态和简单状态存在递推关系。有点动态规划的感觉。经典的题型是海岛分金和老虎吃山羊。
+One type of problem is that a complex problem that can be decomposed into small, simple problems, with recursive relationships between the complex and simple states. It is a bit like dynamic programming. The classic problem type is the pirates share gold and tigers eat goat.
