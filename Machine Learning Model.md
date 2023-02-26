@@ -73,15 +73,21 @@ PCA is an orthogonal linear transformation that transforms the data to a new coo
 - PCA is sensitive to scale of features, because the optimization process mesures the variance of projection.
 - Sometimes, it's hard to find the interpretation of principal components especially after scalling.
 
+## Linear Discriminant Analysis
+
+LDA takes advantages of the label. It tries to find a projection (a direction) that maximize the distance groups while minimize the variance within groups. In two dimension situations, the objective function is $max \frac{(\mu_1 - \mu_2)^2}{\sigma_1^2 + \sigma_2^2}$.
+
+Assumption: it assumes that all groups of data are in normal distribution.
+
 ## What is the difference between Linear Discriminant Analysis and PCA?
 
+One significant difference is that PCA does not require knowledge of labels, but LDA utilize the Information of label.
 
+**Is there any cases LDA outperforms PCA?**
 
+Yes. There are some cases when projection direction that maximizes the variance cannot linearly separate data. For example, 
 
+<img src="Figures/LDA outperforms PCA.jpeg" alt="LDA outperforms PCA" style="zoom:20%;" />
 
-
-
-
-
-
+If we have no information of data, we certainly cannot assure that data come from different distribution, (if their means are close to each other). Thus, we cannot separate two groups of data. That's not the fault of PCA. However, if we have the oracle, we can certainly find the direction that orthogonal to the covariance direction, to linearly separate two groups of data. However, PCA cannot take the advantage of oracle, still project data to the direction that maximize the variance.
 
