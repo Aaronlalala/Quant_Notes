@@ -59,3 +59,29 @@ Can maximum depth of a decision tree be greater than the number of the features?
 KNN is an instance based model, it's also called lazy learning model. Because it does not learning a disriminative function from the training data but recording the traning data.
 
 
+
+
+
+# Unsupervised Model
+
+## Principal Components Analysis
+
+PCA is an orthogonal linear transformation that transforms the data to a new coordinate to maximize the variance of projection on axes.
+
+### Drawbacks of PCA
+
+- PCA is sensitive to scale of features, because the optimization process mesures the variance of projection.
+- Sometimes, it's hard to find the interpretation of principal components especially after scalling.
+
+## What is the difference between Linear Discriminant Analysis and PCA?
+
+
+
+
+
+
+
+
+
+
+

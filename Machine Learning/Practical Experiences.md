@@ -1,3 +1,5 @@
+[toc]
+
 # Model Selection
 
 When dealing with the traditional tabular data machine learning, choosing a linear or non-linear model is a very first dealing thing. 
@@ -33,3 +35,10 @@ $w_{t+1} = w_t - \gamma \nabla_w l(f_s(x), y)$, where $l$ is loss function, $f$ 
 **What if we use regularized model?**
 
 If we don't scale the response while scaling the independent variables, the parameters might become really large. Will it affect the performance of regularization? But one thing can almost sure is that calculation will generate much more rounding error. (from numerical analysis prospective)
+
+
+
+## Time Series Cross-Validation
+
+## Time Series Train Test Spliting
+
