@@ -66,7 +66,12 @@ KNN is an instance based model, it's also called lazy learning model. Because it
 
 ## Principal Components Analysis
 
-PCA is an orthogonal linear transformation that transforms the data to a new coordinate to maximize the variance of projection on axes.
+PCA is an orthogonal linear transformation that transforms the data to a new coordinate to maximize the variance of projection on axes. 
+
+
+
+The eigenvectors of the covariance matrix represent the principal components (the 
+their magnitude. I
 
 ### Drawbacks of PCA
 
