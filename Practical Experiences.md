@@ -8,7 +8,41 @@ When dealing with the traditional tabular data machine learning, choosing a line
 
 
 
+## Cross Validation
+
+Split data into train and test. Then further repeadtly conduct cross validation on train set. When have a good result,  test the final result on test set. A common choice of k is 10, after that benefit deminishes quickly.
+
+
+
+<img src="Figures/cv.png" alt="image-20230227112545288" style="zoom:50%;" />
+
+Besides the mean results of cross validation, another metric os c-v is the variance of data. The variance tells whether the model is sentitive to the variation of data.
+
+After fitting k sub-models, fit the model using the whole training set.
+
+## Nested Cross Validation
+
+<img src="Figures/nested-cv.png" alt="image-20230227113335440" style="zoom:25%;" />
+
+## Stratified Cross Validation
+
+Apply for time series data.
+
+
+
 # Metrics
+
+## Precision, Recall and F1 Score
+
+Precision: $\dfrac{TP}{TP+FP}$. Recall: $\dfrac{TP}{P}$. F1 = $2\dfrac{Prec\cdot Rec}{Prec+Rec}$. 
+
+
+
+## Receiver Operating Characteristic Curve (ROC)
+
+
+
+
 
 ## Accuracy v.s. Area Under Curve (AUC)
 
