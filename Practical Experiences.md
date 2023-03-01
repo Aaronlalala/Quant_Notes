@@ -38,11 +38,15 @@ Precision: $\dfrac{TP}{TP+FP}$. Recall: $\dfrac{TP}{P}$. F1 = $2\dfrac{Prec\cdot
 
 
 
+## Trade-off in Confusion Matrix
+
+In reality, the cost of false negative and false positive might be different. We could adjust the decision threshold of the model to sacrafice the one type of the fault to optimize the other.
+
+
+
 ## Receiver Operating Characteristic Curve (ROC)
 
-
-
-
+Adjusting the prediction threshold for the classification, then genearting false positive rate and true positive rate pairs to form the curve.
 
 ## Accuracy v.s. Area Under Curve (AUC)
 
@@ -69,6 +73,15 @@ $w_{t+1} = w_t - \gamma \nabla_w l(f_s(x), y)$, where $l$ is loss function, $f$ 
 **What if we use regularized model?**
 
 If we don't scale the response while scaling the independent variables, the parameters might become really large. Will it affect the performance of regularization? But one thing can almost sure is that calculation will generate much more rounding error. (from numerical analysis prospective)
+
+## Class Imbalance
+
+In fraud detection, fraud cases are rare compared to the normal transactions.
+
+- Oversample minority or Drop some majority
+- Synthetic minority oversampling technique
+
+
 
 
 
