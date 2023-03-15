@@ -89,3 +89,16 @@ In fraud detection, fraud cases are rare compared to the normal transactions.
 
 ## Time Series Train Test Spliting
 
+
+
+# Ensembling Techniques
+
+## Bagging
+
+## Bootstrapping
+
+Add misclassified data to the following weak learners.
+
+## Stacking
+
+## Adaboosting

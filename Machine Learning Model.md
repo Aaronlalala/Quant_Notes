@@ -14,15 +14,19 @@
 
 ## Logistic Regression
 
-$\hat{y} = sigmoid(w^Tx + b)$. The sigmoid function is to make the estimated value's range is 0 to 1 to represent the probability. The learning process is to find out optimal parameter $w$.
+$\hat{y} = \sigma(z)$. $z = b_0 + b_1 x_1 + b_2 x_2 + \cdots + b_n x_n$The sigmoid function is to make the estimated value's range is 0 to 1 to represent the probability. The learning process is to find out optimal parameter $w$.
 
-**Sigmoid function** $\sigma(x) = \frac{1}{1 + e^{-x}}$. 
+**Sigmoid function** $\sigma(z) = \frac{1}{1 + e^{-z}}$. 
 
-**Loss (error) function (apply to single observation):** in losgistic regression, its loss function is not $\frac{1}{2}(\hat y-y)^2 $ because this loss function is not convex and cannot be easily optimized. The convex loss function that this model uses is $L(\hat{y}, y) = -(y\cdot log\hat{y} + (1-y)\cdot log(1-\hat{y}))$.
+**Loss (error) function (apply to single observation):** in losgistic regression, its loss function is not $\frac{1}{2}(\hat y-y)^2 $ because this loss function is not convex and cannot be easily optimized. The loss function is derived by maximum likelihood: 
+$$
+\text{Likelihood} = \prod_{i=1}^N (p(y_i))^{y_i} (1 - p(y_i))^{1 - y_i} \\
+\text{Log-likelihood} = \sum_{i=1}^N [y_i \log(p(y_i)) + (1 - y_i) \log(1 - p(y_i))] \\
+\text{Loss function} = -\sum_{i=1}^N [y_i \log(p(y_i)) + (1 - y_i) \log(1 - p(y_i))]
+$$
 
-**Cost function (average loss for entire training set):** $J(w, b) = \dfrac{1}{m}\sum L(\hat{y}^{(i)}- y^{(i)})^2$
 
-**class_weight:** A very interesting parameter of the model. It describes the cost for making a false prediction for the label. Sometimes making a false prediction for a positive target is much larger than a false prediction for a negative target.
+**class_weight:** A very interesting parameter of the model (sklearn package). It describes the cost for making a false prediction for the label. Sometimes making a false prediction for a positive target is much larger than a false prediction for a negative target.
 
 
 
@@ -49,6 +53,18 @@ Can maximum depth of a decision tree be greater than the number of the features?
 **In classification model:** $IG(f, sp) = I(parent) - (\frac{N_L}{N}I(left) + \frac{N_R}{N}I(right))$, where function $I$ is the criteria to measure the **impurity** of a node. There mare many metrics for impurity, for example gini index and entropy.  The learning process will recursively split the data into children nodes until the information gain is 0 (cannot make the sample in children more pure).
 
 **In decision tree regression model:** the impurity of a node is $I(node) = MSE(node) = \frac{1}{N}\sum(y^{(i)} - \bar{y})^2$, $\bar{y}$ is the mean target value of all sample in that node.
+
+## Random Forest
+
+Bagged Decision Trees = Random Forest
+
+Bagging method take average of the prediction, thus, reduce the variance of our model. However, we can't look for the decision boundary of a random forest. But we still could try to count the frequency of feature splitting to have a sense of which are more important.
+
+**Why produce a forest of weak learners that have each seen a portion of the samples and features?**
+
+Prevent overfitting.
+
+
 
 
 
