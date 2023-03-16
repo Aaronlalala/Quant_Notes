@@ -68,15 +68,15 @@ $\frac{\partial L}{\partial b_j} = \sum_{i=1}^N (p(y_i) - y_i) x_{ij}$
 
 Thus, in the **vector form**: 
 
-$\nabla L = \begin{bmatrix} \frac{\partial L}{\partial b_0} \ \frac{\partial L}{\partial b_1} \ \vdots \ \frac{\partial L}{\partial b_n} \end{bmatrix}$, which is the gradient of loss function with respect to each parameter.
+$\nabla L = \dfrac{1}{N} \begin{bmatrix} \frac{\partial L}{\partial b_0} \ \frac{\partial L}{\partial b_1} \ \vdots \ \frac{\partial L}{\partial b_n} \end{bmatrix}$, which is the gradient of loss function with respect to each parameter.
 
-$\nabla L = \begin{bmatrix} \sum_{i=1}^N (p_i - y_i) x_{i0} \ \sum_{i=1}^N (p_i - y_i) x_{i1} \ \vdots \ \sum_{i=1}^N (p_i - y_i) x_{in} \end{bmatrix}$
+$\nabla L = \dfrac{1}{N} \begin{bmatrix} \sum_{i=1}^N (p_i - y_i) x_{i0} \ \sum_{i=1}^N (p_i - y_i) x_{i1} \ \vdots \ \sum_{i=1}^N (p_i - y_i) x_{in} \end{bmatrix}$
 
-$∇L = \begin{bmatrix} \langle (p - y), \vec{x}_0 \rangle \ \langle (p - y), \vec{x}_1 \rangle \ \vdots \ \langle (p - y), \vec{x}_n \rangle \end{bmatrix}$, which is the inner product form.
+$∇L = \dfrac{1}{N} \begin{bmatrix} \langle (p - y), \vec{x}_0 \rangle \ \langle (p - y), \vec{x}_1 \rangle \ \vdots \ \langle (p - y), \vec{x}_n \rangle \end{bmatrix}$, which is the inner product form.
 
-$\nabla L = X^T(p - y)$. 
+$\nabla L = \dfrac{1}{N} \cdot X^T(p - y)$. 
 
-Thus, for a spcific parameter $b_i$, $\delta b_i = x_i \cdot (p_i - y_i)$. (more rigorously times a learning rate)
+Thus, for a spcific parameter $b_i$, $\delta b_i = \frac{1}{N} \cdot x_i \cdot (p_i - y_i)$ and $b_i = b_i - \alpha \cdot \delta b_i$.
 
 
 
