@@ -20,7 +20,7 @@ $\hat{y} = \sigma(z)= \frac{1}{1 + e^{-z}}$ , which is the sigmoid function. $z 
 
 **Loss (error) function (apply to single observation):** in losgistic regression, its loss function is not $\frac{1}{2}(\hat y-y)^2 $ because this loss function is not convex and cannot be easily optimized. The loss function is derived by maximum likelihood, and the likelihood function is a proudct of Bernoulli pmf. 
 
-<img src="Figures/Bernoulli-pmf.png" alt="image-20230314223850206" style="zoom:50%;" />
+<img src="../Figures/Bernoulli-pmf.png" alt="image-20230314223850206" style="zoom:50%;" />
 $$
 \text{Likelihood} = \prod_{i=1}^N (p(y_i))^{y_i} (1 - p(y_i))^{1 - y_i} \\
 \text{Log-likelihood} = \sum_{i=1}^N [y_i \log(p(y_i)) + (1 - y_i) \log(1 - p(y_i))] \\
@@ -137,7 +137,7 @@ PCA is an orthogonal linear transformation that transforms the data to a new coo
 
 
 The eigenvectors of the covariance matrix represent the principal components (the 
-their magnitude. I
+their magnitude. 
 
 ### Drawbacks of PCA
 
@@ -158,7 +158,7 @@ One significant difference is that PCA does not require knowledge of labels, but
 
 Yes. There are some cases when projection direction that maximizes the variance cannot linearly separate data. For example, 
 
-<img src="Figures/LDA outperforms PCA.jpeg" alt="LDA outperforms PCA" style="zoom:20%;" />
+<img src="../Figures/LDA outperforms PCA.jpeg" alt="LDA outperforms PCA" style="zoom:20%;" />
 
 If we have no information of data, we certainly cannot assure that data come from different distribution, (if their means are close to each other). Thus, we cannot separate two groups of data. That's not the fault of PCA. However, if we have the oracle, we can certainly find the direction that orthogonal to the covariance direction, to linearly separate two groups of data. However, PCA cannot take the advantage of oracle, still project data to the direction that maximize the variance.
 

@@ -22,7 +22,7 @@ After fitting k sub-models, fit the model using the whole training set.
 
 ## Nested Cross Validation
 
-<img src="Figures/nested-cv.png" alt="image-20230227113335440" style="zoom:25%;" />
+<img src="../Figures/nested-cv.png" alt="image-20230227113335440" style="zoom:25%;" />
 
 ## Stratified Cross Validation
 
