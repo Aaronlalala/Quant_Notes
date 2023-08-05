@@ -29,4 +29,4 @@
 
 - One cancels the other: when one order is executed, the other is canceled automatically.
 
-  ![image-20230726021057533](../Figures/OCO order.png)
+  ![OCO](../Figures/OCO order.png)
