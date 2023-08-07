@@ -84,6 +84,20 @@ Two best priced chips have already been taken and some investors has already rea
 
 
 
+# S&P500
+
+## Year 2019
+
+The same as S&P index. You got the same chance to enter and also few chances to exit.
+
+![image-20230806182413993](../Figures/VP19.png)
+
+## Prediction of Year 2023
+
+The most recent best chance to enter the market is at May. Now it's gone. You could see that three parallel MA lines. It's risky to follow such high slope upper trend. I would rather wait for the next round.
+
+<img src="../Figures/VP20.png" alt="image-20230806182832023" style="zoom:50%;" />
+
 # Summary
 
 This technical analysis method is only a kind of vageuly correctness. However, it could be programmed to a trading signal and become part of a stacking model.
