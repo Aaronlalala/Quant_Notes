@@ -1,6 +1,6 @@
 Volume profile is the volume distribution on price levels. It shows the whether investors' opinions of the market are consistent. Price with larger volume is more controversial. Once MA lines cross over that price, it's easy to form a trend.
 
-**Previous Bottom:** the bottom of the market in the bearish round.
+**Previous Bottom:** the bottom of the market in the last bearish round. Not the one that just ends.
 
 # Chinese CSI 300 Index
 
@@ -52,11 +52,9 @@ Volume profile is the volume distribution on price levels. It shows the whether 
 
 ## Year 2018
 
-Current market price of the index is at the control price, but the distance between short term MA and control price is still large. It could fluctuate around like half year earlier. However, once the short term MA breaks this control price, market will easily enter an upper trend.
+Current market price of the index is below the control price and the distance between short term MA and control price is still large. However, there are two peaks of this price distribution. As the price fluctuates around like half year earlier, it will sooner take over the previous one. At that time, if the short term MA could breaks this control price easily, market will enter to an upper trend. Combining this with other signals, personally, I have entered 90% position of my portfolio to this market.
 
-Combining this with other signals, personally, I have entered 90% position of my portfolio to this market.
-
-![image-20230806165706986](../Figures/VP12.png)
+<img src="../Figures/VP12.png" alt="image-20230806180718896" style="zoom:50%;" />
 
 # BTC/USDT
 
@@ -75,6 +73,10 @@ Combining this with other signals, personally, I have entered 90% position of my
 <img src="../Figures/VP16.png" alt="image-20230806172014466" style="zoom:40%;" />
 
 ## Prediction of Year 2023
+
+If we use this method, we should enter the market at Jan of 2023.
+
+<img src="../Figures/VP18.png" alt="image-20230806181324328" style="zoom:33%;" />
 
 Two best priced chips have already been taken and some investors has already realized 30-40% profits. It's not a good idea to enter the market at this price. Personally, I will wait another bearish round.
 
