@@ -66,9 +66,9 @@ Combining this with other signals, personally, I have entered 90% position of my
 
 2. Market goes up too fast, there is almost no volume accumulated at a specific price range. 8 months -> 500%. There is no dense transaction area, which means market consistenly agree the trend. There is lots of other risk free arbitrage opportunities in such an irrational market. We don't need to take such risks to follow this crazy trend.
 
-   <img src="../Figures/VP14.png" alt="image-20230806171032784" style="zoom:33%;" />
+   <img src="../Figures/VP14.png" alt="image-20230806171032784" style="zoom: 25%;" />
 
-3. There is no "dense transaction" area during the trend in BTC market. Whether on the upward trend or the downward trend, investors' views have not diverged greatly. It shows that most of the investments in this market are blindly following the herd.
+3. There is no "dense transaction" area during the trend in BTC market. Whether on the upward trend or the downward trend, investors' views have not diverged greatly. It shows that most of the investors in this market are blindly following the herd, or the market is highly monopolized.
 
    Volume profile analysis methods would fail in such a market. This is because essentially the method is used to find the price at which investors disagree with each other and make critical decisions.
 
