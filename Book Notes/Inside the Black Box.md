@@ -1,3 +1,5 @@
+# Risk Model
+
 **What is Risk?**
 
 The unintentinal exposures that are linked to the persuit of alpha. And those exposures are not expected to make money. 
