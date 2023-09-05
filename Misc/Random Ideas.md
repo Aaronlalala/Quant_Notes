@@ -1,0 +1,1 @@
+- Quote stuffing: placing and quickly canceling orders. For example, it's applied in shark strategy to eat up iceburg orders.
