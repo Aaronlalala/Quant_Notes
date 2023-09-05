@@ -80,6 +80,6 @@ You originally place an order in the second layer of order book (or even higher)
 
 **Joining**
 
-![Joining make spread.png](Joining make spread.png)
+![Joining make spread](Joining make spread.png)
 
 Can't really understand the above example. Should ask David.
