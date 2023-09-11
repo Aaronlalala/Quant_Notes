@@ -32,5 +32,28 @@ This method is much easier in computation, but requires more thinking.
 
 
 
+# Question 3: Variance and Covariance
 
+$X$ and $Y$ are random variables such that $E(X)=2$, $\operatorname{Var}(X)=4, E(Y)=1, \operatorname{Var}(Y)=\frac{1}{16}$, and $\operatorname{Corr}(X, Y) = \frac{1}{2}$.
 
+What is the value of $E\left((X+2 Y)^2\right)$ ?
+
+<img src="../../Figures/OA 2.3.png" alt="OA 2.3" style="zoom:20%;" />
+
+# Question 4: Central Limit Theorem
+
+The weights of a certain population of adults are normally distributed with a mean of 160 pounds and a standard deviation of 20 pounds. If a random sample of 25 adults is selected, what is the probability that the sample mean weight is greater than 165 pounds?
+
+According to the Central Limit Theorem, the sample mean follows normal distribution with mean equals to the population mean and variance equals to $\dfrac{1}{n}$ of population variance. Thus, in this case, sample mean $\bar{X}$ follows $N(\mu=160, \,\sigma^2 = \dfrac{400}{25}=16)$. $P(\bar{X} > 165) = P(\dfrac{\bar{X} - 160}{4} > \dfrac{165-160}{4}=\dfrac{5}{4} )$. The next step is to find the probability that a standard normal distribution RV is greater than 1.25.
+
+# Question 5: Markov Chain
+
+$P_{00}=0.5, P_{01}=0.5, P_{10}=0.7, P_{11}=0.3$. Thus, transition matrix, $P=\left[\begin{array}{ll}0.5 & 0.5 \\ 0.7 & 0.3\end{array}\right]$.
+Assume stationary distribution is $\pi=\left[\pi_0, \pi_1\right]$
+
+$\begin{aligned}
+& \pi P=\pi, \quad \pi_0+\pi_1=1 \\
+& 0.5 \pi_0+0.7 \pi_1=\pi_0, \quad \pi_0+\pi_1=1 \\
+\Rightarrow & 0.5 \pi_0=0.7 \pi_1 \Rightarrow \pi_1=\frac{5}{7} \pi_0 \Rightarrow \frac{5}{7} \pi_0+\pi_0=1 \\
+\Rightarrow & \pi_0=\frac{7}{12} \approx 0.583 .
+\end{aligned}$
