@@ -48,6 +48,10 @@ According to the Central Limit Theorem, the sample mean follows normal distribut
 
 # Question 5: Markov Chain
 
+As an impatient driver, I often switch lanes in a traffic jam. A certain highway has two lanes in my direction. Whenever traffic moves, if I'm in the left lane I switch to the right with a probability 50%. If I'm in the right lane I switch back to the left with a probability 70%, because it's supposed to be faster. Over the long term, what fraction of time do I expect to spend in the left lane?
+
+**Common mistake:** the stationary distribution is a row vector by default. If you want to use it in column format, you should transpose your transition matrix.
+
 $P_{00}=0.5, P_{01}=0.5, P_{10}=0.7, P_{11}=0.3$. Thus, transition matrix, $P=\left[\begin{array}{ll}0.5 & 0.5 \\ 0.7 & 0.3\end{array}\right]$.
 Assume stationary distribution is $\pi=\left[\pi_0, \pi_1\right]$
 $$
