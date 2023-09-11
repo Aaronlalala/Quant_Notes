@@ -34,9 +34,9 @@ This method is much easier in computation, but requires more thinking.
 
 # Question 3: Variance and Covariance
 
-$X$ and $Y$ are random variables such that $E(X)=2$, $\operatorname{Var}(X)=4, E(Y)=1, \operatorname{Var}(Y)=\frac{1}{16}$, and $\operatorname{Corr}(X, Y) = \frac{1}{2}$.
+$X$ and $Y$ are random variables such that $E(X)=2$, $Var(X)=4, E(Y)=1, Var(Y)=\frac{1}{16}$, and $Corr(X, Y) = \frac{1}{2}$
 
-What is the value of $E\left((X+2 Y)^2\right)$ ?
+What is the value of $E((X+2 Y)^2)$ ?
 
 <img src="../../Figures/OA 2.3.png" alt="OA 2.3" style="zoom:20%;" />
 
