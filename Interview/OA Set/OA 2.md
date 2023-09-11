@@ -50,10 +50,11 @@ According to the Central Limit Theorem, the sample mean follows normal distribut
 
 $P_{00}=0.5, P_{01}=0.5, P_{10}=0.7, P_{11}=0.3$. Thus, transition matrix, $P=\left[\begin{array}{ll}0.5 & 0.5 \\ 0.7 & 0.3\end{array}\right]$.
 Assume stationary distribution is $\pi=\left[\pi_0, \pi_1\right]$
-
-$\begin{aligned}
+$$
+\begin{aligned}
 & \pi P=\pi, \quad \pi_0+\pi_1=1 \\
 & 0.5 \pi_0+0.7 \pi_1=\pi_0, \quad \pi_0+\pi_1=1 \\
 \Rightarrow & 0.5 \pi_0=0.7 \pi_1 \Rightarrow \pi_1=\frac{5}{7} \pi_0 \Rightarrow \frac{5}{7} \pi_0+\pi_0=1 \\
 \Rightarrow & \pi_0=\frac{7}{12} \approx 0.583 .
-\end{aligned}$
+\end{aligned}
+$$
