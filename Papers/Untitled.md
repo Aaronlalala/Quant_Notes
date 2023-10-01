@@ -1,3 +1,0 @@
-![image-20230905113110155](/Users/aaronlalala/Library/Application Support/typora-user-images/image-20230905113110155.png)
-
-This this example, why we set a lower bound as a threshold to join the ask queue? Assume pDN is 0.8, or even higher which satisfies the condition to join the ask queue, the bid queue is small and ask queue is large. There is few bid orders behind ours waiting to be executed. We probably need to use a market order to prevent loss as he mentions earlier, which seems contradictory.![image-20230905113308040](/Users/aaronlalala/Library/Application Support/typora-user-images/image-20230905113308040.png) 
