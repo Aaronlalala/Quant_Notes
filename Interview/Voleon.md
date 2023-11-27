@@ -16,6 +16,8 @@ The interviewer asked questions regarding market microstructure and equity marke
 
 4. What strategy to short a company if the researchers told you that their models have a specific confidence that company's stock price gonna drop?
 
+   (left blank for now.)
+
 5. Since I mentioned the long short strategy, he asked what things need to be considered when doing a long short strategy on stocks that pay dividends?
 
    - The borrowing rate of high dividends stocks are higher, because the lenders will miss dividends. 
