@@ -19,10 +19,91 @@ Two problems of Nash Equilibiurm, one is existence and the other is uniqueness.
 
 ## Existence of Equilibrium
 
+There are three fixed-point theorems to prove.
+
+**Theorem 1**
+
+Suppose that for each player, the **strategy space is compact** and convex and the payoff function is continuous and **quasiconcave** with respect to each player’s own strategy. Then, there exists at least one pure strategy NE in the game.
+
+**Theorem 2**
+
+Suppose that a game is symmetric, and for each player, the strategy space is compact and convex and the payoff function is continuous and quasiconcave with respect to each player’s own strategy. Then, there exists at least one symmetric pure strategy NE in the game.
+
+**Theorem 3**
+
+In a supermodular game, there exists at least one NE.
+
+A twice continusouly differentiable payoff unction $\pi_i(x_1, ..., x_n)$ is super modular iff $\pi''_i(x_i, x_j) \geq 0$ for all x and $j \neq i$. The game is called supermodular if the players payoffs are supermodular.
+
 ## Uniqueness of Equilibrium
+
+Demonstrating uniqueness is generally much harder than demonstrating existence of equilibrium. The following methods prove the uniqueness of NE give that NE exists. It this condition is not given, it needs to be proved separately.
+
+Finally, it is worth pointing out that uniqueness results are only available for games with continuous best response functions and, hence, there are no general methods to prove uniqueness of NE in supermodular games.
+
+**Method 1. Algebraic Argument**
+
+Simply looking at the optimality conditions to see if it's unique. For example, in a two-player game, the optimality condition of one player may have a unique closed-form solution that does not depend on the other player’s strategy, and, given the solution for one player, the optimality condition for the second player can be solved uniquely. In other cases, one can assure uniqueness by analyzing geometrical properties of the best response functions and arguing that they intersect only once (only feasible in two-player games).
+
+**Method 2. Contraction Mapping Argument**
+
+It's easiest to verify. A mapping is a contraction if it brings points closer.
+
+**Theorem 4**
+
+If the best response mapping is a contraction on the entire strategy space, there is a unique NE in the game.
+
+One can think of a contraction mapping in terms of iterative play: Player 1 selects some strategy, then player 2 selects a strategy based on the decision by player 1, etc. If the best response mapping is a contraction, the NE obtained as a result of such iterative play is stable but the opposite is not necessarily true. The best response will bring the following strategies "closer". 
+
+**Method 3. Univalent Mapping Argument**
+
+If the best response mapping is one to one, then there can be at most one fiexed point of such mapping.
+
+**Theorem 6**
+
+Cannot understand.
+
+**Method 4. Index Theory Approach**
+
+Suppose the strategy space of the game is convex and all payo ﬀ functions are quasiconcave. Then, if (−1) n | H | is positive whenever ∂π i /∂x i = 0, all i, there is a unique NE.
 
 ## Multiple Equilibrium
 
+The problem with mulitple equilibria is that the players may not know which equilibirum will prevail. Hence, it is entirely possible that a nonequilibrium outcome results because one player plays one equilibrium strategy while a second player chooses a strategy associated with another equilibrium. 
+
+An alternative method to rule out some equilibria is to focus only on the Pareto optimal equilibrium, of which there may be only one.
+
 ## Comparative Statics
 
+It explores how changes in the parameters of a game influence the strategies and outcomes of the game. This analysis helps to understand the sensitivity of the equilibrium strategies and outcomes to changes in external factors like costs, market demand, regulations, etc. 
+
+**Implicit Function Theorem Approach**: by analizing the derivatives of the qeuilibrium strategies with respect to the parameters.
+
+**Supermodular Games Approach**: given the condition that games are supermodular, if the second partial derivative of the payoff function w.r.t. strategy $x_i$ and parameter $a$ is non-negative for all players, then both the largest and smallest NE strategies are increasing functions of parameter a.
+
 # Dynamic Game Setting
+
+Previous games are static, which mean all decision are made at the same. However, dynamic model means decisions are made over time.
+
+## Stackelberg Game
+
+Two roles: leader and follower. 
+
+In SCM models, large firms are leaders and small firms are followers.
+
+Intution of two roles:
+
+1. Follower's strategy will be the best response to any decision made by the leader.
+2. The leader has the above information and will select the best response strategy anticipating the strategy by the follower.
+
+## Repeated & Stochastic Simultaneous Moves
+
+Inventory models used in SCM literature often involve inventory replenishment decisions that are made over and over again.
+
+**Memoryless:** then it's a repeated game.
+
+More common it's the time dependent game, because there is some transfer of inventory and/or backorders between periods.
+
+A good feature of repeated game is that players may employ trigger strategies: This threat of reverting to a diﬀerent strategy may even induce players to achieve the best possible outcome.
+
+A typical time dependent game is the **stochastic game/Markov game.** And a standard simplifying assumption that demands are i.i.d across periods.
