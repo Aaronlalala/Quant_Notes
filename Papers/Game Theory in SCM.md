@@ -107,3 +107,77 @@ More common it's the time dependent game, because there is some transfer of inve
 A good feature of repeated game is that players may employ trigger strategies: This threat of reverting to a diﬀerent strategy may even induce players to achieve the best possible outcome.
 
 A typical time dependent game is the **stochastic game/Markov game.** And a standard simplifying assumption that demands are i.i.d across periods.
+
+## Differential Games
+
+Differential games are the extension of the multiple periods games, however, the time is continuous.
+
+In such game setting, factors like price are note changed instantaneous. Thus, the model requires differential equations to describe the rate of change of those variables over time. That's where the name "differential" comes from.
+
+**Open Loop Strategies**
+
+Strategies are predetermined at the begining of the game and do not change in response to the environment and the states of other players.
+
+In a supply chain context, an open loop strategy could be a manufacturer deciding in advance how mmuch of a product to produce each month. They have signed the order and will fulfill it regardless of what happens during the month.
+
+**Closed Loop Strategies**
+
+Strategies adapt to chages in the game environment as well as other players states. in a supply chain context, a retailer might adjust inventory levels and prices based on the sales data and stock levels updated in real time.
+
+
+
+# Cooperative Games
+
+## Game Setting
+
+The game consists of the set of $N$ players with coaliations $S \sube N$ and a characteristic function $v(S)$ that specifies a value that create by any subset of players in $N$. It's assumed that players are free to form any coalitions beneficial to them.
+
+**Definition: Core of the game**
+
+The unility vector $\pi_1, ..., \pi_N$ is in the cores of the cooperative game if everyone gets at least what they would have if htey worked alone or with any other group.
+
+$\forall S \subseteq N, \sum_{i \in S} \pi_i \geq v(S) and \sum_{i \in N} \pi_i \geq v(N). $
+
+The core of the game may not exist and could also be not unique.
+
+## Shapley Value
+
+The Shapley value suggests a fair way to distribute the total reward among participants based on their individual contributions.
+
+- Summation is a sum over all subsets of players that do not include player i.
+- $|S|!$ is the number of different ways member of subset players can come together. $(N-|S| = 1)$ is the number of players not in the subset before player i joins. $N!$ is total number of ways all players can come together. This fraction is the probability that describes subset S occurs in all possible orderings.
+- The right term is the marginal contribution of player i to the subset S
+
+Putting it together, it's the expected contribution across all possible ways play i could join the group.
+
+## Biform Games
+
+It's a combination of cooperative and non-cooperate games. 
+
+- The cooperative stage: players negotiate and form coalition. 
+- The non-cooperative stage: making individual decision to maximize their own utility.
+
+The game begins by players making choices from among their strategies and incurring costs. After that, a cooperative game occurs in which the characteristic value function depends on the chosen actions.
+
+When the company is purchasing, it needs to choose which vendors to buy from. This is to form a coalition with the suppliers, it could be cooperative. Once the company chooses the vendors, it must maximize the outcome within the limits of the earlier choice.
+
+# Unequal Information Games
+
+The previous games assume players have the same information, for example, other players' strategy. One ﬁrm may have a better forecast of demand than another ﬁrm, or a ﬁrm may possess superior information regarding its own costs and operating procedures. Furthermore, a ﬁrm may know that another ﬁrm may have better information, and, therefore, choose actions that acknowledge this information shortcoming.
+
+## Signaling Game
+
+A two-player example:
+
+Imagine a chef (the manufacturer) who is planning to host a big dinner party (produce products) and needs to order ingredients (capacity) from a supplier. The chef has a better idea than the supplier about how many guests (demand) will likely attend but knows that more ingredients allow for more flexibility in case of extra guests. However, more ingredients also mean higher costs, which the supplier must bear.convincing.
+
+- **Pooling Equilibrium:** The chef gives the same guest estimate regardless of the actual number expected. Consequently, the supplier can’t tell whether the party is really big or small and might overprepare (more ingredients) or underprepare (fewer ingredients).
+- **Separating Equilibrium (Signaling):** The chef uses different estimates or signals based on the actual number of expected guests. If the chef can convincingly use a specific signal for a big party (like a higher payment guarantee or special conditions that only make sense with more guests), the supplier can trust the estimate and provide the right amount of ingredients.
+
+The key in these types of games is communication and trust, backed by actions that align with the true situation. Signals must be carefully chosen so they’re believable and align with the interests of both parties, ensuring efficient and effective collaboration.
+
+## Screening
+
+
+
+## Bayesian Games
