@@ -161,7 +161,7 @@ The game begins by players making choices from among their strategies and incurr
 
 When the company is purchasing, it needs to choose which vendors to buy from. This is to form a coalition with the suppliers, it could be cooperative. Once the company chooses the vendors, it must maximize the outcome within the limits of the earlier choice.
 
-# Unequal Information Games
+# Imperfect Information Games
 
 The previous games assume players have the same information, for example, other players' strategy. One ﬁrm may have a better forecast of demand than another ﬁrm, or a ﬁrm may possess superior information regarding its own costs and operating procedures. Furthermore, a ﬁrm may know that another ﬁrm may have better information, and, therefore, choose actions that acknowledge this information shortcoming.
 
@@ -178,6 +178,8 @@ The key in these types of games is communication and trust, backed by actions th
 
 ## Screening
 
+**Game Setting:** The less-informed party designs a set of choices aimed at including informed party to reveal their private information through their choices.
 
+**SCM model:** A supplier offers a manufacturer a menu of contracts, each for a specific type of manufacturers. Volume Discount Contract: lower per-unit price but requires high minimum purchase.Flexible Purchase Contract: higher per-unit price but allows smaller order quantities.
 
 ## Bayesian Games
