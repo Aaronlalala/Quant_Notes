@@ -1,0 +1,2 @@
+**MongoDB**
+DB query is generally a very cheap operation. It should only take millisecond-level time. However, iterate through the mongo's cursor is much slower. Consider using dataframe apply function to handle that.
